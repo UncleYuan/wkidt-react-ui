@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wBAAyB;EACvB,MAAM,EAAE,iBAAiB;;AAI3B,SAAU;EACR,aAAa,EAAE,iBAAiB;;AAElC,cAAe;EACb,SAAS,EAAE,IAAI",
+"sources": ["../../sass/page/list_page.scss"],
+"names": [],
+"file": "list_page.css"
+}

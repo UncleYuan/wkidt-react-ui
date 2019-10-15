@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+.nav-wrap{
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filter_1{
+    margin-bottom: 20px;
+      .bg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: #000;
+        display: none;
+        &.show{
+          display: block;
+        }
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+      }
+     & ul{
+        
+            & li{
+        &.w-li{
+          width: 100px;
+          word-break: nowrap;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+        cursor: pointer;
+        padding:0 10px;
+                float: left;
+        line-height: 30px;
+                margin-right: 20px;
+        margin:10px 0 10px 12px;
+                text-align: center;
+            min-width: 28px;
+        input{
+          width:50px;
+        }
+        }
+    
+  }
+}
+.filter_bk{ 
+  border: 1px solid #d80413;
+  height: 30px;
+  text-align: center;
+  min-width: 100px;
+  color:  #d80413;
+  
+  i{
+    cursor: pointer;
+    padding-left:7px;
+  }
+}
+.filter_bj{
+
+    color:  #fff;
+    background: $baseColor;
+}
+.li-filter-row,.filter-row{
+  border-bottom:1px dashed #eee;
+  position: relative;
+  height: 53px;
+  margin: 0 0 -1px;
+  .filter-ul-wrap{
+    .search-input{
+      display: none;
+      margin:30px 30px 10px;
+    }
+    border:none;
+    width: 940px;
+    overflow:hidden;
+    padding: 0 15px ;
+    height: 53px;
+    &.pos{
+      .search-input{
+        display: block;
+      }
+      .filter-ul{
+        padding:15px 0 0;
+      }
+      position: absolute;
+      top: -1px;
+      height:auto;
+      right: 108px;
+      background: #fff;
+      padding: 0 15px 15px;
+      z-index: 5;
+      border: 1px solid #eee;
+      box-shadow: 0 0 35px rgba(0,0,0,0.3);
+    }
+  }
+  .more-btn{
+    line-height: 1;
+    padding:15px 0 0 25px;
+    float: right;
+    .iconfont{
+      font-size: 30px;
+      padding:0 20px 0 0;
+      vertical-align: middle;
+    }
+  }
+  .filter_title{
+    margin:15px 0 0 10px;
+    float: left;
+        width: 70px;
+  }
+}
+.all-cont{
+    .main-cont{
+        width: 915px;
+        margin: 0 25px 0 0;
+    }
+    .sider-cont{
+        width: 260px;
+        .sider-tit{
+            height: 40px;
+            line-height:40px;
+            text-align: center;
+            color:#fff;
+            background:$contraryColor;
+        }
+        .fruit-item-list{
+            border:1px solid $fuzzyColor;
+            border-top:0;
+        }
+        .fruit-item{
+            border:none;
+            .left-img{
+                margin:0 0 0 11px;
+                img{
+                    width:115px;
+                }
+            }
+            .fruit-info{
+                width: 115px;
+                margin:0 0 0 11px;
+                .tit{
+                    margin:0 0 5px;
+                    @include lh(1);
+                    .tit-a{
+                        font-size: 14px;
+                    }
+                }
+                .fruit-des{
+                    font-size: 12px;
+                    height: 100px;
+                    overflow:hidden;
+                }
+            }
+        }
+    }
+}
+.top-sort-wrap{
+    padding:7px 0;
+    .sort-block{
+        @include inline-block;
+        @include pointer;
+        @include lh(1);
+        text-align: center;
+        width: 125px;
+        border-right:1px solid $fuzzyColor;
+        &.active{
+            color:$contraryColor;
+        }
+    }
+}
+
+.fruit-item-list{
+    .fruit-item{
+        padding:10px 0;
+        border-bottom:1px solid $fuzzyColor;
+        @include oh;
+        .left-img{
+            float: left;
+
+        }
+        .fruit-info{
+            float: left;
+            width: 715px;
+            margin:0 0 0 20px;
+            .tit{
+                margin:0 0 15px;
+                .tit-a{
+                    font-size: 22px;
+                    vertical-align: middle;
+                }
+                .tag{
+                    padding:2px 15px;
+                    @include inline-block;
+                    @include br(15);
+                    @include fs(12);
+                    vertical-align: middle;
+                    margin: 0 0 0 15px;
+                    background:$contraryColor;
+                    color:#fff;
+
+                }
+            }
+            .fruit-des{
+                height:80px;
+                color:$desaltColor;
+            }
+            .info-bottom-left{
+                width:450px;
+                @include oh;
+                .bottom-info-row{
+                    width: 215px;
+                    float: left;
+                    @include fs(16);
+                    margin:0 0 10px;
+                    color:$desaltColor;
+                }
+            }
+            .go-btn{
+                @include fs(20);
+            }
+        }
+    }
+}

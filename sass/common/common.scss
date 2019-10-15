@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@import "config";
+@import "reset";
+@if $turnPhone{
+  html{ 
+    font-size: 16px;
+  }
+  $winW-list: 360,400,440,480,520,560,600,640;
+  @each $item in $winW-list {
+    @media only screen and (min-width:#{$item}px) {
+      html {font-size:#{$item/20-1}px !important;}
+    }
+  }
+}
+
+
+
+.clearfix{ 
+  @include clearfix;
+}
+
+.pointer{
+  @include pointer;
+  
+}
+.none{
+  @include none;
+}
+
+.fb{
+  @include fb;
+}
+
+.fn{
+  @include fn;
+  
+}
+
+.no-unl{
+  @include no-unl;
+}
+
+.word-break{
+    @include word-break;
+   
+}
+
+
+
+
+
+
+.tl{
+  @include text-align(left);
+}
+
+.tc{
+  @include text-align(center);
+}
+
+.tr{
+  @include text-align(right);
+}
+.tj{
+  @include text-align(justify);  
+}
+
+.fl{
+     float:left !important;
+}
+
+.fr{
+     float:right !important;
+}
+
+.vm{
+
+  vertical-align:middle;
+}
+
+.vt{
+     vertical-align:top;
+}
+
+.pr{
+     position:relative;
+}
+
+.pa{
+     position:absolute;
+}
+
+.mAuto{
+  margin-left:auto;
+  margin-right:auto;
+}
+.oh{
+  @include oh;
+}
+.block{
+  display:block;
+}
+.inline-block{
+  @include inline-block;
+}
+
+$m-list: 0,3,5,10,15,20,25,35,30,40,50,70;
+@each $item in $m-list {
+  .m#{$item} {
+    @include m($item);
+  }
+  .mt#{$item} {
+      @include m($item,top);
+  }
+  .ml#{$item} {
+    @include m($item,left);
+    
+  }
+  .mr#{$item} {
+    @include m($item,right);
+
+  }
+  .mb#{$item} {
+    @include m($item,bottom);
+
+  }
+
+}
+
+
+$p-list: 0,2,3,5,10,15,20,25,30,40,50,60,70,80,100,110,120,130;
+@each $item in $p-list {
+  .p#{$item} {
+    @include p($item);
+  }
+  .pt#{$item} {
+    @include p($item,top);
+  }
+  .pl#{$item} {
+    @include p($item,left);
+  }
+  .pr#{$item} {
+    @include p($item,right);
+  }
+  .pb#{$item} {
+    @include p($item,bottom);
+  }
+
+}
+$br-list: 0,2,3,5,10,15,20,25,30,50,60,80,100;
+@each $item in $br-list {
+  .br#{$item} {
+     @include br($item); 
+  }
+}
+$fz-list: 11,12,13,14,15,16,18,20,22,24,26,28,30,32,34,36,40,46,50,54,65,80;
+@each $item in $fz-list {
+  
+  .fs#{$item} {
+    @include fs($item); 
+  }
+ 
+}
+
+
+$w-list:50,80,100,120,130,150,160,180,190,200,230,250,280,300,320,340,350,360,370,380,400,420,450,550,630,650,700,750,800,840;
+@each $item in $w-list {
+  .w#{$item} {
+    @include w($item); 
+  }
+ 
+}
+
+$wb-list:10,12,14,15,20,30,40,45,50,52,60,88,44;
+@each $item in $wb-list {
+  .w#{$item}_b {
+    min-height: 1px;
+    @include wb($item); 
+  }
+ 
+}
+.w100f{
+  width: 100%;
+}
+$h-list:10,40,43,60;
+@each $item in $h-list {
+  .h#{$item} {
+    @include h($item); 
+  }
+ 
+}
+$lh-list:1,2;
+@each $item in $lh-list{
+  .lh#{$item} {
+    @include lh($item); 
+    
+  }
+}
+$minH-list:1,2;
+@each $item in $lh-list{
+  .min-h#{$item} {
+    @include min-h($item); 
+   
+  }
+}
+
+.lh1_5{
+  line-height: 1.5;
+}
+.wAuto{width: auto !important;}
+.cont-wrap{width:$contWidth;}

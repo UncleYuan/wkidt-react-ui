@@ -1,0 +1,19 @@
+/* resize */
+/* table */
+.card-box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 7px; }
+  .card-box.middle {
+    margin-left: auto;
+    margin-right: auto; }
+  .card-box.s {
+    max-width: 400px; }
+  .card-box.m {
+    max-width: 700px; }
+  .card-box.l {
+    max-width: 1000px; }
+
+/*# sourceMappingURL=css/common/card-box.css.map */

@@ -1,0 +1,1 @@
+export const form = require('./form').default;

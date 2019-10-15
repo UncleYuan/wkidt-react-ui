@@ -1,0 +1,36 @@
+/* resize */
+/* table */
+.helpcenter-wrap {
+  margin: 50px auto;
+  overflow: hidden; }
+  .helpcenter-wrap .left-block {
+    background: #fff;
+    width: 210px;
+    float: left;
+    margin: 0 20px 0 0;
+    text-align: center; }
+    .helpcenter-wrap .left-block .top-head {
+      background: #03a9f4;
+      padding: 5px 0;
+      font-size: 20px;
+      color: #fff; }
+    .helpcenter-wrap .left-block .top-tit {
+      background: #dfdfdf;
+      padding: 8px 0; }
+    .helpcenter-wrap .left-block .left-menu {
+      padding: 5px 0; }
+      .helpcenter-wrap .left-block .left-menu .menu-link {
+        padding: 6px 0;
+        font-size: 14px;
+        display: block; }
+  .helpcenter-wrap .right-block {
+    width: 965px;
+    background: #fff;
+    float: left; }
+    .helpcenter-wrap .right-block .top-nav {
+      background: #dfdfdf;
+      padding: 8px 10px; }
+    .helpcenter-wrap .right-block .cont-in * {
+      max-width: 100%; }
+
+/*# sourceMappingURL=helpcenter.css.map */

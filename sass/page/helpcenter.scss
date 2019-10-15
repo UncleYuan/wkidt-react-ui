@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import "../common/config";
+
+.helpcenter-wrap{
+	margin:50px auto;
+	overflow:hidden;
+	.left-block{
+		background:#fff;
+		width: 210px;
+		float:left;
+		margin:0 20px 0 0;
+		text-align: center;
+		.top-head{
+			background:$baseColor;
+		    padding: 5px 0;
+		    font-size: 20px;
+		    color: #fff;
+		}
+		.top-tit{
+			background:#dfdfdf;
+    		padding: 8px 0;
+		}
+		.left-menu{
+			padding:5px 0;
+			.menu-link{
+				padding:6px 0;
+				font-size: 14px;
+
+				display: block;
+			}
+		}
+	}
+	.right-block{
+		width:965px;
+		background:#fff;
+		float:left;
+		.top-nav{
+			background:#dfdfdf;
+			padding:8px 10px;
+		}
+		.cont-in{
+			*{
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,356 @@
+@import "config";
+.footer {
+    background: #2c2c2c;
+    padding-top: 8px;
+    color: #777;
+    a {
+        color: #777;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.foot02 {
+    width: 1000px;
+    height: 55px;
+    color: #999999;
+    a {
+        float: left;
+        color: #999999;
+        span {
+            background:url(imagesUrl("creditbg.png")) no-repeat;
+        }
+    }
+    #___szfw_logo___ {
+        width: 514px;
+        float: left;
+        a {
+            img {
+                height: 36px;
+                margin: 0px 2px;
+                display: inline-block;
+            }
+            &:hover img {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+            img.hide {
+                display: none;
+            }
+        }
+    }
+    p {
+        display: inline;
+        text-align: left;
+        line-height: 25px;
+        span {
+            width: 135px;
+            display: inline-block;
+        }
+    }
+    .infos {
+        width: 420px;
+        float: left;
+        text-align: left;
+        margin: -7px 0px 0px 8px;
+        font-size: 12px;
+    }
+}
+
+.foot02 .credit_1,
+.foot02 .credit2,
+.foot02 .credit3,
+.foot02 .credit4 {
+    margin-right: 6px;
+}
+
+.foot02 .credit_1 .show {
+    width: 90px;
+    height: 36px;
+    display: block;
+    background-position: 0px 0px;
+}
+
+.foot02 .credit_1 .hide {
+    width: 90px;
+    height: 36px;
+    display: block;
+    background-position: -100px 0px;
+}
+
+.foot02 .credit2 .show {
+    width: 90px;
+    height: 36px;
+    display: block;
+    background-position: 0px -125px;
+}
+
+.foot02 .credit2 .hide {
+    width: 90px;
+    height: 36px;
+    display: block;
+    background-position: -100px -125px;
+}
+
+.foot02 .credit3 .show {
+    width: 99px;
+    height: 36px;
+    display: block;
+    background-position: 0px -83px;
+}
+
+.foot02 .credit3 .hide {
+    width: 99px;
+    height: 36px;
+    display: block;
+    background-position: -100px -83px;
+}
+
+.foot02 .credit4 .show {
+    width: 100px;
+    height: 36px;
+    display: block;
+    background-position: 0px -41px;
+}
+
+.foot02 .credit4 .hide {
+    width: 100px;
+    height: 36px;
+    display: block;
+    background-position: -100px -41px;
+}
+
+.foot02 .credit5 .show {
+    width: 100px;
+    height: 36px;
+    display: block;
+    background-position: -203px -41px;
+}
+
+.foot02 .credit5 .hide {
+    width: 100px;
+    height: 36px;
+    display: block;
+    background-position: -203px -83px;
+}
+
+.ourinfo {
+    border-bottom: 1px solid #4f4f4f;
+    padding-bottom: 20px;
+}
+
+.safeinfo {
+    padding: 24px 0;
+    padding-bottom: 10px;
+}
+
+.bw990 {
+    width:$contWidth;
+    margin: 0 auto
+}
+
+.bottomRight a {
+    background: url(imagesUrl("icon.png")) no-repeat;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    float: left
+}
+
+.bottomRight a.weiboStyle {
+    background-position: -89px -67px;
+    margin-right: 10px
+}
+
+.bottomRight a.weiboStyle:hover {
+    background-position: -36px -67px;
+}
+
+.bottomRight a.weixinStyle {
+    background-position: -89px -25px;
+}
+
+.bottomRight a.weixinStyle:hover {
+    background-position: -36px -25px;
+}
+
+.bottomRight a.appleStyle {
+    background-position: -89px -115px;
+    margin-right: 10px
+}
+
+.bottomRight a.appleStyle:hover {
+    background-position: -36px -115px;
+}
+
+.bottomRight a.androidStyle {
+    background-position: -89px -160px;
+}
+
+.bottomRight a.androidStyle:hover {
+    background-position: -36px -160px;
+}
+
+.contactWay {
+
+    font-size: 20px;
+    color: #777;
+    line-height: 19px;
+    margin-top: 25px;
+}
+
+.contactWay span label {
+    float: left
+}
+
+.contactWay span {
+    margin-right: 45px;
+    float: left
+}
+
+.contactWay span.last {
+    font-size: 16px;
+}
+
+.contactWay span label.labelStyle {
+    font-size: 12px;
+}
+
+.contactWay i {
+    background: url(imagesUrl("icon.png")) no-repeat;
+    display: inline-block;
+    margin-right: 14px;
+    float: left;
+}
+
+.contactWay i.telStyle {
+    background-position: -36px -207px;
+    width: 18px;
+    height: 18px;
+}
+
+.contactWay i.emailStyle {
+    background-position: -89px -212px;
+    width: 16px;
+    height: 12px;
+    margin-top: 4px
+}
+
+.contactWay i.onlieService {
+    background-position: -36px -239px;
+    width: 19px;
+    height: 16px;
+    margin-top: 2px
+}
+
+.bottomLeft {
+    width: 780px;
+    float: left;
+}
+
+.bottomRight {
+    float: right;
+}
+
+.aboutHref a {
+    font-size: 16px;
+    color: #999999;
+    letter-spacing: 1px;
+    margin-right: 30px
+}
+
+.weixinAndWeibo,
+.downLoadStyle {
+    width: 74px;
+    float: left;
+    text-align: center;
+}
+
+.weixinAndWeibo p,
+.downLoadStyle p {
+    margin-top: 15px
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.bottomPadding {
+    padding: 15px 0 25px;
+    font-size: 12px;
+}
+
+.safeinfo {
+}
+
+.friendlyLink {
+    line-height: 24px;
+    padding: 15px 0 22px;
+
+}
+
+.friendlyLink a {
+    color: #666;
+}
+
+.friendlyLink span {
+    float: left;
+    color: #666;
+    font-weight: bold;
+}
+
+.friendlyLinkList {
+    float: left;
+    width: 942px
+}
+
+.friendlyLinkList a {
+    margin:15px 0 0 25px;
+    width: 100px;
+    display: inline-block;
+    color: #777
+}
+
+
+.contactusdmjr{position:fixed; right:-230px; bottom:0px;_position:absolute; width:230px;height:100%; background:#2fa8d7; z-index:99999999999;}
+.contactusdmjr .auto{overflow:auto;height: 100%;}
+.contactusdmjr .hoverbtn{width:40px; height:152px; border-radius:4px;  border-radius: 4px 0px  0px 4px; padding-top:15px; cursor: pointer; position:absolute; top:50%; margin-top:-66px; left:-40px; font-size:18px; color:#fff; background:#0085b8;}
+.contactusdmjr .hoverbtn span{width:40px; height:23.5px; text-align: center; overflow:hidden; float:left;}
+.contactusdmjr .hoverbtn .icon-box{text-align: center;text-indent:-3px;}
+.contactusdmjr .hoverbtn i{width:13px; height:9px; margin:10px 0px 0px 14px; float:left; display:inline;}
+.contactusdmjr .conter{width:186px; margin-left:22px;   margin-top:30px;}
+.contactusdmjr .conter dl dt,.contactusdmjr .conter .weibo .a1,.contactusdmjr .conter .kefu .a1{color:#2FA8D7;line-height:31px;background:#fff;border-radius: 100%;text-align: center;}
+.contactusdmjr .conter .iconfont{font-size: 20px;}
+.contactusdmjr .conter .con1{ border-bottom:1px solid #2c9ac5; padding-bottom:14px;}
+.contactusdmjr .conter .con1 dl dt{width:31px; height:31px; float:left; background-position:0px -200px;}
+.contactusdmjr .conter .con1 dl dd{width:142px; float:right; font-size:18px; color:#fff;}
+.contactusdmjr .conter .con1 dl .f1{height:19px; line-height:16px; font-size:14px; vertical-align: top; font-weight: bold; }
+.contactusdmjr .conter .con1 dl .f2{height:17px;}
+.contactusdmjr .conter .con2{ border-bottom:1px solid #2c9ac5; padding:15px 0px 15px 0px;}
+.contactusdmjr .conter .con2 .a1{margin-right:10px;}
+.contactusdmjr .conter .con2 a{float:left; height:31px; line-height:31px; color:#f3e7b2; }
+.contactusdmjr .conter .con2 span{float:left;height:31px; line-height:31px; font-size:14px; color:#fff;}
+.contactusdmjr .conter .con2 span.fs3{font-size: 20px;font-weight: bold;}
+.contactusdmjr .conter .kefu .a1{width:31px; height:31px; display:block; background-position:0px -167px;}
+.contactusdmjr .conter .shequ .a1{width:31px; height:31px; display:block; background-position:-202px -129px;}
+.contactusdmjr .conter .weibo .a1{width:31px; height:31px; display:block; background-position:-34px -167px;}
+.contactusdmjr .qqcall{padding:19px 0px 10px 0px; border-bottom:1px solid #2c9ac5;}
+.contactusdmjr .qqcall dl dt{width:31px; height:31px; float:left; background-position:-68px -167px;}
+.contactusdmjr .qqcall dl dd {width:142px; float:right; font-size:12px; color:#fff; height:22px; float:right;}
+.contactusdmjr .qqcall dl dd .full{color:#ccc; cursor: text; text-decoration: none; font-size:12px;}
+.contactusdmjr .qqcall dl dd a{color:#fcebaf; text-decoration: underline;}
+.contactusdmjr .weixincall{padding:15px 0px; border-bottom:1px solid #2c9ac5;}
+.contactusdmjr .weixincall dl dt{width:31px; height:31px; float:left; background-position:-34px -200px;}
+.contactusdmjr .weixincall dl dd {width:142px; float:right; font-size:12px; color:#fff; height:22px; float:right;}
+.contactusdmjr .weixincall .f1{height:25px; font-size:14px; vertical-align: top; color:#fff; font-weight: bold; }
+.contactusdmjr .weixincall .f3{width:73px; height:73px; margin-right:69px; display:inline;background:url(imagesUrl("2vm.png")) no-repeat;}
+.contactusdmjr .yktimer{width: 180px;padding: 10px 5px 5px 10px;background: #2D9DC9;margin: 10px 0px;}
+.contactusdmjr .yktimer span{display:block; height:20px; line-height:20px; font-size:14px; color:#0e6384;}
+.contactusdmjr .menu{padding:10px 25px;background: #fff;clear: both;margin: 15px 15px 0;overflow: hidden;border-radius: 5px;}
+.contactusdmjr .menu li{width: 100%;height:35px;line-height:35px;text-align: center;border-bottom:1px solid #eee;}
+.contactusdmjr  .conter  .menu li a{display: block;height:35px;line-height:35px;float: none;color:#0085B8;font-size: 16px;}
+.contactusdmjr  .conter  .menu li:hover{background:#2FA8D7; border-radius: 3px;} 
+.contactusdmjr  .conter  .menu li:hover a{color:#fff;}
+#jrmask2 { position: absolute; left: 0; top: 0; z-index: 100000; background:#000;filter:alpha(opacity=0); opacity: 0;  -moz-opacity:0;  -khtml-opacity: 0; display:none;}

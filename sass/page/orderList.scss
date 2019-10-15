@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import "../common/config";
+.box-in{
+    border-top:1px solid $fuzzyColor;
+    box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    background:#fff;
+    padding:20px 20px 0;
+    overflow-y:auto;
+    .top-table{
+        line-height: 32px;
+        color:$desaltColor;
+        font-size: 14px;
+    }
+}
+.order-item{
+    border:1px solid $fuzzyColor;
+    margin:10px 0;
+    .order-tit{
+        background:lighten($baseColor,52%);
+        overflow:hidden;
+        @include fs(14);
+        line-height: 32px;
+    }
+    .cont{
+        @include clearfix;
+        @include fs(14);
+        padding: 10px;
+        .block-l{
+            margin: -10px 0 -11px -10px;
+            border-right: 1px solid $fuzzyColor;
+        }
+        .item-left-block{
+            height: 75px;
+                padding: 10px;
+    border-bottom: 1px solid $fuzzyColor;
+            .left-img{
+                width: 68px;
+                height: 75px;
+                display: block;
+                margin:0 10px 0 0;
+                .img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .right-info {
+                
+                margin: -75px 0 0 85px;
+                .tit{
+                    @include fs(16);
+                }
+                .info-des{
+                    @include text-overflow;
+                    color:$desaltColor;
+                    margin:0px 0 8px;
+                }
+            }
+        }
+        
+    }
+}
+.search-box{
+    border:1px solid $fuzzyColor;
+    float:left;
+    .search-input{
+        @include fs(12);
+        width:200px;
+        height: 32px;
+        line-height: 32px;
+        padding:0 10px;
+        border:none;
+        background:none;
+    }
+    .btn{
+        font-size: 12px;
+        padding:0;
+        width: 100px;
+        text-align: center;
+        background:$fuzzyColor;
+        border-radius:0;
+        height: 32px;
+        line-height: 32px;
+    }
+}
+@media(max-width:1250px){
+    
+}

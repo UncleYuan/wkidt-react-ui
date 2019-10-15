@@ -1,0 +1,21 @@
+@import "config";
+.card-box{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
+	background:#fff;
+	padding:$gutter;
+	margin:$gutter;
+	border-radius:7px;
+	&.middle{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	&.s{
+		max-width: 400px;
+	}
+	&.m{
+		max-width: 700px;
+	}
+	&.l{
+		max-width:1000px;
+	}
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import "config";
+html, body, button, input, select, textarea {
+    font-size: $baseFontSize;
+    line-height: $fontLineHeight;
+    font-family:$fontFamily;
+}
+
+
+
+body, div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button{
+  margin:0;
+  padding:0;
+}
+
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+caption,th{
+  text-align:left;
+  font-weight:normal;
+}
+
+html,body,fieldset,img,iframe,abbr{
+  border:0;
+}
+
+html{
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body{overflow-x:hidden; }
+i,em{
+  font-style:normal;
+}
+
+ol,ul,li{
+  list-style:none;
+}
+
+h1,h2,h3,h4,h5,h6,small{
+  font-size:100%;
+  font-weight:normal
+}
+
+textarea{
+  overflow:auto;
+  resize:none;
+}
+
+label{
+  cursor:default;
+}
+
+a,button{
+  cursor:pointer;
+}
+
+a,a:active{
+  color:#333;
+  text-decoration:none;
+}
+a:hover{color:#FE5574;}
+iframe{
+    display: block;
+}
+
+input[type="submit"]{
+   border:none;
+}
+
+button,input,select,textarea{
+  font-size: 100%;
+}
+
+button[disabled],html input[disabled]{
+  cursor: default;
+}
+
+input[type="checkbox"],input[type="radio"] {
+  padding:0;
+  box-sizing:border-box;
+   vertical-align:-2px;
+   margin:0px 3px 0px 0px;
+   cursor:pointer;
+}
+
+.form-item input[type="text"]:focus,.form-item textarea:focus,.form-item .row textarea:focus,.form-item  input[type="password"]:focus{
+  border:1px solid #55acef;
+}
+
+a {
+  outline: none;
+}

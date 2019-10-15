@@ -1,0 +1,48 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation: fadeIn 1s ease both;
+  -moz-animation: fadeIn 1s ease both; }
+
+.fadeOut {
+  -webkit-animation: fadeOut 1s ease both;
+  -moz-animation: fadeOut 1s ease both; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.bounce {
+  -webkit-animation: bounce 1s .2s ease both;
+  -moz-animation: bounce 1s .2s ease both; }
+
+@-webkit-keyframes bounce {
+  0%,20%,50%,80%,100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
+@-moz-keyframes bounce {
+  0%,20%,50%,80%,100% {
+    -moz-transform: translateY(0); }
+  40% {
+    -moz-transform: translateY(-30px); }
+  60% {
+    -moz-transform: translateY(-15px); } }
+
+/*# sourceMappingURL=animate.css.map */

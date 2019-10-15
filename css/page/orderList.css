@@ -1,0 +1,80 @@
+/* resize */
+/* table */
+.box-in {
+  border-top: 1px solid #e6e6e6;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 20px 20px 0;
+  overflow-y: auto; }
+  .box-in .top-table {
+    line-height: 32px;
+    color: #999;
+    font-size: 14px; }
+
+.order-item {
+  border: 1px solid #e6e6e6;
+  margin: 10px 0; }
+  .order-item .order-tit {
+    background: white;
+    overflow: hidden;
+    font-size: 14px !important;
+    line-height: 32px; }
+  .order-item .cont {
+    zoom: 1;
+    font-size: 14px !important;
+    padding: 10px; }
+    .order-item .cont:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    .order-item .cont .block-l {
+      margin: -10px 0 -11px -10px;
+      border-right: 1px solid #e6e6e6; }
+    .order-item .cont .item-left-block {
+      height: 75px;
+      padding: 10px;
+      border-bottom: 1px solid #e6e6e6; }
+      .order-item .cont .item-left-block .left-img {
+        width: 68px;
+        height: 75px;
+        display: block;
+        margin: 0 10px 0 0; }
+        .order-item .cont .item-left-block .left-img .img {
+          width: 100%;
+          height: 100%; }
+      .order-item .cont .item-left-block .right-info {
+        margin: -75px 0 0 85px; }
+        .order-item .cont .item-left-block .right-info .tit {
+          font-size: 16px !important; }
+        .order-item .cont .item-left-block .right-info .info-des {
+          word-break: nowrap;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: #999;
+          margin: 0px 0 8px; }
+
+.search-box {
+  border: 1px solid #e6e6e6;
+  float: left; }
+  .search-box .search-input {
+    font-size: 12px !important;
+    width: 200px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    border: none;
+    background: none; }
+  .search-box .btn {
+    font-size: 12px;
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    background: #e6e6e6;
+    border-radius: 0;
+    height: 32px;
+    line-height: 32px; }
+
+/*# sourceMappingURL=css/page/orderList.css.map */

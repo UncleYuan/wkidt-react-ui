@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@import "../common/config";
+
+.login{
+	background-image: url('../../images/BJ.jpg') ;
+	background-size: cover;
+	height: 596px;
+	z-index: 99;
+	.login-head{
+		font-size: 20px;
+		color: #9f9f9f;
+		padding: 15px 0;
+		background-color: #f2f2f2;
+	}
+}
+
+.register{
+	background-color: #fff;
+	height: 500px;
+	width: 420px;
+}
+.register2{
+	background-color: #fff;
+	height: 420px;
+	width: 420px;
+}
+.bs{
+	box-shadow: 1px 1px 5px #000;
+}
+
+.form-control{
+	float: right;
+	width: 400px;
+	// height: 58px;
+	line-height: 58px;
+
+	label{
+		vertical-align: middle;
+	}
+	input{
+		border: 1px solid #cccccc;
+		padding: 5px;
+		margin-bottom: 20px;
+	}
+	.form-control-wrap1{
+		float: right;
+		display: inline-block;
+		width:300px;
+		input{
+			width:280px;
+		}
+	}
+	.form-control-wrap2{
+		position: relative;
+		// float: right;
+		display: inline-block;
+		width:300px;
+	}
+}
+
+.imgCode,.textCode{
+	display: inline-block;
+	height: 35px;
+	line-height: 36px;
+	color: #fff;
+	width: 104px;
+	cursor: pointer;
+}
+.imgCode{
+	top: 10px;
+	padding-top: 1px;
+	position:absolute;
+}
+.textCode{
+	padding-top: 1px;
+	padding-bottom: -2px;
+}
+
+
+.w300{
+	width: 300px;
+	display: none;
+}
+.w210{
+	width: 210px;
+}
+.form-control1{
+	float: right;
+	width: 400px;
+	height: 58px;
+	line-height: 58px;
+	label{
+		vertical-align: middle;
+	}
+	input{
+		border: 1px solid #cccccc;
+		padding: 5px 5px 5px 10px; 
+		margin-bottom: 20px;
+	}
+	.form-control-wrap1{
+		float: right;
+		display: inline-block;
+		width:300px;
+		input{
+			width:280px;
+		}
+	}
+	.form-control-wrap2{
+		float: right;
+		position: relative;
+		display: inline-block;
+		width:300px;
+	}
+}
+
+.confirmation{
+	height: 500px;
+}
+
+.account-ver{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.formActive{
+	display: block;
+}
+
+.login-btn{
+	border-radius: 5px;
+	background-color: $baseColor;
+	color: #fff;
+	padding: 10px 0;
+	cursor: pointer;
+	transition: background 0.5s, color 0.5s;
+	&:hover{
+		background-color: #57832b;
+
+	}
+}
+
+.reg-foot{
+	margin-right: 10px;
+	float: right;
+	width: 280px;
+}
+
+.g-btn{
+	background-color: #f7b401;
+}

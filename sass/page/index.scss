@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import "../common/config";
+.all-wrap{
+    position:relative;
+    .pos-left-wrap{
+        position:absolute;
+        left:-100px;
+        top:10px;
+        width:72px;
+        .pos-flag-a{
+            display: block;
+            margin:0 0 15px;
+            line-height: 0;
+            box-shadow:0 0 10px rgba(0,0,0,0.3);
+            &.go-top{
+                font-size: 16px;
+                text-align: center;
+                line-height: 42px;
+                background:$assistColor;
+                &:hover{
+                    color:#000;
+                }
+            }
+        }
+
+    }
+}
+.top-block-wrap{
+	margin:15px 0 15px -12px;
+	.top-block{
+		background: #fff;
+		width: 290px;
+		height: 120px;
+		overflow: hidden;
+		margin:0 0 0 12px;
+		float: left;
+		position: relative;
+		.block-left{
+			float: left;
+			padding: 5px 0 0 18px;
+
+			.block-tit{
+				font-size: 18px;
+				padding:0 0 3px;
+			}
+			.block-p{
+				font-size: 14px;
+				color:$assistColor;
+                    width: 120px;
+			}
+			.block-tag{
+				position:absolute;
+				left:0;
+				bottom:13px;
+				background:$baseColor;
+				color:#fff;
+				font-size: 14px;
+				padding:3px 15px 3px 20px;
+				border-radius: 0 15px 15px 0;
+			}
+		}
+		.block-right{
+			float: left;
+			margin: 0 0 0 10px;
+		}
+	}
+}
+
+.index-block{
+	overflow:hidden;
+	margin:0 0 20px;
+	.block-left{
+		float: left;
+		width: 224px;
+        img{
+            width: 100%;
+        }
+	}
+	.block-right{
+		float: left;
+    	width:960px;
+    	margin: 0 0 0 15px;
+    	.block-tip{
+    		background:lighten($assistColor,40%);
+    		color:darken($desaltColor,10%);
+    		font-size: 12px;
+    		line-height: 1.5;
+    		padding: 15px 20px;
+    		margin:0 0 15px;
+    	}
+
+	}
+}
+
+.block-list{
+    		overflow:hidden;
+    		margin:0 -30px 0 0;
+    	
+    	.list-item{
+    		width: 225px;
+    		height: 310px;
+    		float: left;
+    		margin:0 20px 10px 0; 
+    		.img-box{
+    			position:relative;
+    			display: block;
+                img{
+                    width: 100%;
+                }
+    			.tag{
+    				position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 33px;
+                    line-height: 33px;
+                    color: #fff;
+                    padding: 0 8px;
+                    font-size: 17px;
+    				&.new{
+    					background:$baseColor;
+    				}
+    				&.hot{
+    					background:$contraryColor;
+    				}
+    			}
+    		}
+    	}
+    	.item-info{
+    		overflow:hidden;
+    		.info-left{
+    			float: left;
+    		}
+    		.more{
+    			float: right;
+    			width: 36px;
+    			height: 36px;
+    			line-height: 36px;
+    			margin:3px 0 0;
+    			text-align: center;
+    			border-radius:100%;
+    			color:$baseColor;
+    			border:1px solid $baseColor;
+    		}
+    		.item-des{
+    			color:$desaltColor;
+    			font-size: 12px;
+    		}
+    	}
+    }

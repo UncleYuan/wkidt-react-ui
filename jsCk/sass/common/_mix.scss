@@ -1,0 +1,226 @@
+
+@function imagesUrl($filename) {	
+  	@return "../../images/"+$filename;
+}
+
+@mixin gradient($start,$end) {
+  	// filter:alpha(opacity=100, finishopacity=50, style=1, startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=$start,endcolorstr=$end,gradientType=0);
+   // 	-ms-filter:alpha(opacity=100, finishopacity=50 ,style=1, startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=$start,endcolorstr=$end,gradientType=0);
+	background:$end; 
+	background:-moz-linear-gradient(top, $start,$end);  
+	background:-webkit-gradient(linear, 0 0, 0 bottom, from($start), to($end));  
+	background:-o-linear-gradient(top, $start,$end); 
+	background-image: linear-gradient($start,$end);
+}
+
+@mixin userSelect {
+
+	moz-user-select: -moz-none;
+	-moz-user-select: none;
+	-o-user-select:none;
+	-khtml-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+
+@mixin clearfix {
+	zoom:1;
+	&:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+}
+@mixin pointer{
+	cursor: pointer;
+}
+@mixin none{
+	display: none;
+}
+@mixin fb{
+	font-weight:bold;
+}
+@mixin fn{
+	font-weight:normal;
+}
+@mixin opac($num){
+	opacity:#{$num/100};
+	filter:alpha(opacity=#{$num});
+}
+@mixin no-unl{
+	text-decoration:none;
+}
+@mixin word-break{
+	word-break:break-all;
+    word-wrap:break-word;
+}
+@mixin oh{
+	overflow:hidden;
+}
+@mixin fn{
+	font-weight:normal;
+}
+@mixin text-align($val){
+	text-align:$val !important;
+    text-align-last:$val;
+    @if $val == justify {
+      text-justify:inter-ideograph;
+    }
+}
+
+@mixin mAuto{
+	margin-left:auto;
+  	margin-right: auto;
+}
+@mixin inline-block{
+	display: inline-block;
+  	*display:inline;
+  	*zoom:1;
+}
+@mixin m($val,$arrow:fasle){
+	@if $arrow{
+		margin-#{$arrow}: #{$val}px;
+     
+    } @else {
+    	 margin:#{$val}px;
+    }
+}
+@mixin p($val,$arrow:fasle){
+	@if $arrow!= fasle{
+		padding-#{$arrow}: #{$val}px;
+    } @else {
+    	padding:#{$val}px;
+    }
+}
+
+@mixin br($val){
+	border-radius:#{$val}px !important; 
+}
+@mixin fs($val){
+	font-size:#{$val}px !important;
+}
+
+@mixin w($val){
+	width:#{$val}px;
+}
+@mixin wb($val){
+	width:#{$val+'%'};
+}
+@mixin h($val){
+	height:#{$val}px;
+}
+
+@mixin lh($val){
+	line-height:#{$val};
+}
+@mixin min-h($val){
+	 min-height:#{$val}px;
+}
+@mixin absoluteWH($name,$val){
+	$position: (top:0, left:0, right:0,bottom:0);
+	position:absolute;
+	@each $k, $v in $position {
+	  @if $name==$k{
+		#{$k}:#{$val};
+	  } @else {
+	  	#{$k}:#{$v};
+	  } 
+	}
+}
+@mixin text-overflow{
+	word-break: nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin make-col-in($row) {
+  	padding-left:  floor(($gutter / 2));
+  	padding-right: ceil(($gutter / 2));
+    float: left;
+  	width: percentage(($row / $grid-columns));
+}
+
+
+
+@mixin clearfix {
+    zoom:1;
+    &:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+}
+
+@mixin container-fixed($gutter: $grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  floor(($gutter / 2));
+  padding-right: ceil(($gutter / 2));
+  @include clearfix;
+}
+@mixin make-row($gutter: $grid-gutter-width) {
+  margin-left:  ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+}
+
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left:  ceil(($grid-gutter-width / 2));
+    padding-right: floor(($grid-gutter-width / 2));
+  }
+}
+@mixin make-grid($class) {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($grid-columns, $class, width);
+  @include loop-grid-columns($grid-columns, $class, pull);
+  @include loop-grid-columns($grid-columns, $class, push);
+  @include loop-grid-columns($grid-columns, $class, offset);
+}
+
+@mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-#{$class}-#{$i}";
+  }
+  #{$list} {
+    float: left;
+  }
+}
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}
+@mixin calc-grid-column($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$class}-#{$index} {
+      width: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index > 0) {
+    .col-#{$class}-push-#{$index} {
+      left: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == push) and ($index == 0) {
+    .col-#{$class}-push-0 {
+      left: auto;
+    }
+  }
+  @if ($type == pull) and ($index > 0) {
+    .col-#{$class}-pull-#{$index} {
+      right: percentage(($index / $grid-columns));
+    }
+  }
+  @if ($type == pull) and ($index == 0) {
+    .col-#{$class}-pull-0 {
+      right: auto;
+    }
+  }
+  @if ($type == offset) {
+    .col-#{$class}-offset-#{$index} {
+      margin-left: percentage(($index / $grid-columns));
+    }
+  }
+}

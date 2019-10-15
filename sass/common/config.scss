@@ -1,0 +1,108 @@
+$baseFontSize:14px;
+$baseColor:#03a9f4;
+$assistColor:#ffb200;
+$assistColor2:#ff8a10;
+$desaltColor:#999;
+$desaltColor-dark:#666;
+$whiteColor:#fff;
+$contraryColor:#ce543d;
+$contWidth:1200px;
+$fontFamily:"Microsoft YaHei";
+$fontLineHeight:1.5;
+$baseFontColor:#333333;
+$colorOrange:#ff8a10;
+$colorGray:#f0f0f0;
+$fuzzyColor:#e6e6e6;
+$fuzzyColor2:#ccc;
+$blueColor:#1386df;
+$relativeColor:#417CA9;
+
+$successColor:#87d068;
+$warnColor:#fa0;
+$dangerColor:#f50;
+ 
+$phoneSize:16;
+
+/* resize */
+$gutter:20px;
+$container-sm:750px;
+$container-md:970px;
+$container-lg:1170px;
+$grid-columns:              12 !default;
+$grid-gutter-width:         20px !default;
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+/* table */
+
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+$body-bg:               #fff !default;
+$font-size-base:          14px !default;
+$line-height-base:        1.428571429 !default;
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+$table-cell-padding:            8px !default;
+//** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding:  5px !default;
+
+//** Default background color used for all tables.
+$table-bg:                      transparent !default;
+//** Background color used for `.table-striped`.
+$table-bg-accent:               #f9f9f9 !default;
+//** Background color used for `.table-hover`.
+$table-bg-hover:                #f5f5f5 !default;
+$table-bg-active:               $table-bg-hover !default;
+
+//** Border color for table and cell borders.
+$table-border-color:            #ddd !default;
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$text-muted:                  $gray-light !default;
+
+
+$turnPhone:false;
+@function rem($px) {
+	 @if($turnPhone){
+	 	 @return $px / $phoneSize * 1rem;
+	} @else {
+	 	  @return #{$px}px;	
+	}
+ 
+}
+
+@import "_mix";
+@import "css3";

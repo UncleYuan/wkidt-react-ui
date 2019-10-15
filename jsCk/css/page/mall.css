@@ -1,0 +1,34 @@
+.mall-banner {
+  height: 200px; }
+  .mall-banner .banner-left img {
+    width: 90px;
+    height: 90px; }
+  .mall-banner .banner-mid {
+    height: 200px; }
+
+.mall-btn {
+  height: 40px;
+  width: 150px;
+  line-height: 40px; }
+
+.mall-recommand {
+  height: 400px; }
+  .mall-recommand .recommand-left {
+    width: 180px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle; }
+    .mall-recommand .recommand-left .pic {
+      position: absolute;
+      top: 150px;
+      left: 40px;
+      background-image: url(/Public/mall/pc/images/mall/tuijian.png);
+      width: 105px;
+      height: 105px;
+      line-height: 105px;
+      font-size: 25px; }
+  .mall-recommand .recommand-box {
+    width: 255px; }
+
+/*# sourceMappingURL=mall.css.map */

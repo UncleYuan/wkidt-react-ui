@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import "config";
+@import "reset";
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{ zoom:1;}
+
+.pointer{
+  cursor: pointer;
+}
+.none{
+  display:none;
+}
+.overflow{overflow:hidden;}
+.fb{
+  font-weight:bold;
+}
+
+.fn{
+  font-weight:normal;
+}
+
+.no-unl{
+  text-decoration:none;
+}
+
+.word-break{
+  word-break:break-all;
+   word-wrap:break-word;
+}
+
+
+
+
+.hidden{
+  overflow: hidden;
+}
+
+.tl{
+     text-align:left !important;
+     text-align-last:left;
+}
+
+.tc{
+     text-align:center;
+     text-align-last:center;
+}
+
+.tr{
+     text-align:right;
+     text-align-last:right;
+}
+.tj{
+    text-align: justify;
+    text-align-last: justify;
+    text-justify:inter-ideograph;
+}
+.bc{
+     margin-left:auto;
+     margin-right: auto;
+}
+
+.fl{
+     float:left !important;
+}
+
+.fr{
+     float:right !important;
+}
+
+.vm{
+     vertical-align:middle;
+}
+
+.vt{
+     vertical-align:top;
+}
+
+.pr{
+     position:relative;
+}
+
+.pa{
+     position:absolute;
+}
+
+.mAuto{
+  margin-left:auto;
+  margin-right:auto;
+}
+.oh{overflow:hidden;}
+.block{display:block;}
+.inline-block{
+  display: inline-block;
+  *display:inline;
+  *zoom:1;
+}
+
+$m-list: 0,5,10,15,20,25,30,40,50,70;
+@each $item in $m-list {
+  .m#{$item} {
+    margin:#{$item}px;
+  }
+  .mt#{$item} {
+      margin-top: #{$item}px;
+  }
+  .ml#{$item} {
+      margin-left: #{$item}px;
+  }
+  .mr#{$item} {
+      margin-right: #{$item}px;
+  }
+  .mb#{$item} {
+      margin-bottom:#{$item}px;
+  }
+
+}
+
+
+$p-list: 0,2,3,5,10,15,20,25,30,50,60,100;
+@each $item in $p-list {
+  .p#{$item} {
+    padding:#{$item}px;
+  }
+  .pt#{$item} {
+      padding-top: #{$item}px;
+  }
+  .pl#{$item} {
+      padding-left: #{$item}px;
+  }
+  .pr#{$item} {
+      padding-right: #{$item}px;
+  }
+  .pb#{$item} {
+      padding-bottom:#{$item}px;
+  }
+
+}
+
+$fz-list: 11,12,13,14,15,16,18,20,22,24,28,30,32,36,40,46,54,65;
+@each $item in $fz-list {
+  .fs#{$item} {
+    font-size:#{$item}px !important;
+  }
+ 
+}
+
+
+$w-list:50,80,100,120,130,150,160,180,190,200,230,250,280,300,320,340,350,360,370,380,400,420,630,650,750,840;
+@each $item in $w-list {
+  .w#{$item} {
+    width:#{$item}px;
+  }
+ 
+}
+.w100f{
+  width: 100%;
+}
+$h-list:10,40,43;
+@each $item in $h-list {
+  .h#{$item} {
+    height:#{$item}px;
+  }
+ 
+}
+$lh-list:1,2;
+@each $item in $lh-list{
+  .lh#{$item} {
+    line-height:#{$item};
+  }
+}
+.wAuto{width: auto !important;}
+.cont-wrap{width:$contWidth;}
